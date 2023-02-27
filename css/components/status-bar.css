@@ -1,4 +1,7 @@
 .status-bar {
+    position: sticky;
+    top: 0px;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 5px 3px;
@@ -23,6 +26,10 @@
     align-items: center;
 }
 
-.status-bar__column .material-symbols-outlined:nth-child(2){
+.status-bar__column:last-child span{
+    margin: 0px 3px;
+}
+
+.status-bar__column:last-child i{
     margin: 0px 5px;
 }

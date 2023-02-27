@@ -13,7 +13,7 @@
       <!-- 클래스 이름에 부모(status-bar)와 자식(column)을 명시 -->
       <div class="status-bar__column">
         <span>No Service</span>
-        <span class="material-symbols-outlined"> wifi </span>
+        <i class="fas fa-wifi"></i>
       </div>
 
       <div class="status-bar__column">
@@ -22,42 +22,99 @@
 
       <div class="status-bar__column">
         <span>110%</span>
-        <span class="material-symbols-outlined"> battery_full_alt </span>
-        <span class="material-symbols-outlined"> bolt </span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-bolt"></i>
       </div>
     </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header>
+
+    <a id="friends-display-link">
+      <i class="fas fa-info-circle"></i>
+      Friends' Names Display
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://blogpfthumb-phinf.pstatic.net/MjAyMjEwMjRfMjEw/MDAxNjY2NTg4MTgwNDUw.mIRaLS-f-JqKrGxEb3dw8hj-VZdfdU2mz5SG-SU704wg.0JCCnLWUnGW_rAEBmQYVfYWQIx9ooQUQHXTUBkRoLW8g.JPEG.choyoobin/IMG_8074.jpg/IMG_8074.jpg?type=w161"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Jomango</h4>
+            <!-- <h6 class="user-component__subtitle">this text whatever</h6> !-->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://blogpfthumb-phinf.pstatic.net/MjAyMjEwMjRfMjEw/MDAxNjY2NTg4MTgwNDUw.mIRaLS-f-JqKrGxEb3dw8hj-VZdfdU2mz5SG-SU704wg.0JCCnLWUnGW_rAEBmQYVfYWQIx9ooQUQHXTUBkRoLW8g.JPEG.choyoobin/IMG_8074.jpg/IMG_8074.jpg?type=w161"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Channel
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span>2</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html">
-            <span class="material-symbols-outlined"> person </span>
+            <i class="fas fa-user fa-2x"></i>
           </a>
         </li>
 
         <li class="nav__btn">
           <a class="nav__link" href="#">
-            <span class="material-symbols-outlined"> chat_bubble</span>
+            <span class="nav__notification">1</span>
+            <i class="far fa-comment fa-2x"></i>
           </a>
         </li>
 
         <li class="nav__btn">
-          <a class="nav__link" href="#"
-            ><span class="material-symbols-outlined"> search </span></a
-          >
+          <a class="nav__link" href="#">
+            <i class="fas fa-search fa-2x"></i>
+          </a>
         </li>
 
         <li>
-          <a class="nav__link" href="#"
-            ><span class="material-symbols-outlined"> more_horiz </span></a
-          >
+          <a class="nav__link" href="#">
+            <div class="nav__dot"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
         </li>
       </ul>
     </nav>
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
+    <script
+      src="https://kit.fontawesome.com/e100171857.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
